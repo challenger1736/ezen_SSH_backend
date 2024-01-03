@@ -10,7 +10,7 @@ public class Step3 { // c s
         System.out.println("var2:"+var2);// 8진수 : 데이터 앞에 0
         int var3 = 365;                  // 10진수 : 365[10]
         System.out.println("var3:"+var3);
-        int var4 = 0xB3;                 //  16진수 : 데이터 앞에 0x
+        int var4 = 0xB3;                 //  16진수 : 데이터 앞에 0x A =10, B=11 11X16 고로 0xB3 = 176+3
         System.out.println("var4:"+var4);
 
         // p.42 byte타입 [-128~127]   > 1바이트 = 8비트 = 1부호 + 7값 = 2의 7승 // 인트가 바이트 되는 과정
@@ -38,6 +38,7 @@ public class Step3 { // c s
         //char c3 = "가"; System.out.println("c3:"+c3);
         //java: incompatible types: java.lang.String cannot be converted to char
 
+        // int는 21억 까지 있으므로 유니코드 다 실행가능!
         int i3 ='A';     //65
         System.out.println("i3:"+i3);
         int i4 ='가';    //44065
@@ -55,7 +56,7 @@ public class Step3 { // c s
         System.out.println("str3:"+str3);
 
 
-        // java / jdk13 이후 가능한 문법
+        // java / jdk13 이후 가능한 문법""" 3개 연속 쓰기!
         String str4 = """
                 나는 자바를
                 학습합니다.
@@ -66,14 +67,14 @@ public class Step3 { // c s
         // p.45 float [ 소수점 8자리 표현 ] : 4바이트 반올림
         float f1 = 0.123456789123456789f; // 7자리 유효 [ * 리터럴 데이터 뒤에 f/F 붙여 float 타입을 알림 ]
         System.out.println("f1:"+f1);
-        // double  [ 소주점 17자리 표현 ] : 8바이트, 실수의 기본타입
-        double d1 = 0.123456789123456789; // 15자리 유효 [ * 직접 입력한 값 -> 리터럴 ] - 실수의 기본타임
+        // double  [ 소수점 16자리 표현 ] : 8바이트, 실수의 기본타입
+        double d1 = 0.123456789123456789; // 15자리 유효 [ * 직접 입력한 값 -> 리터럴 ] - 실수의 기본타입
         System.out.println("d1:"+d1);
         
         // p.48  boolean [true 또는 false]
         boolean bool1 = true;
         System.out.println("bool1:"+bool1);
-        // boolean bool2 = 1; 안됨    1은 인트이므로 boolean에 저장할 수 없다. [ 정수 가장 최소단위 바이트 ]
+        // boolean bool2 = 1; 안됨    1은 인트이므로 boolean에 저장할 수 없다. [ 정수 가장 최소단위 바이트 ] JAVA는 다르다! JS만 되는거임
 
         //리터럴(입력한 데이터 그 자체) : 1. 정수 int 2. 실수 double 3. 논리 boolean 4. 문자(char '') , 문자열(String "")
 

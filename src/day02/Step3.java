@@ -19,16 +19,16 @@ public class Step3 { // c s
             // [1] 객체 생성
         // new Scanner( System.in);
             // [2] 객체 생성 했으면 담아야 변수(타입:객체의타입) 에 한다.
-        Scanner scanner = new Scanner( System.in);
+        Scanner scanner = new Scanner( System.in); // 담아야 하니까 System.in
             // [3] 객체를 통한 메소드 호출.
         //scanner.nextLine();
             // [4] 메소드 호출의 결과을[return] 또 다른 변수에 저장한다.
-        String str = scanner.nextLine();
-        System.out.println("str = " + str); // soutv
+        String str = scanner.nextLine(); //enter 누르기 전까지 모든 문자열
+        System.out.println("str = " + str); // soutv //  출력해야하니까 out
 
         // [ Scanner 제공하는 메소드 ]
         // 1. 입력받은 문자열(String) 반환.  띄어쓰기 포함 불가
-        String str1 = scanner.next();
+        String str1 = scanner.next(); //첫 띄워쓰기 이전까지의 문자열을 불러온다.
         System.out.println("str1 = " + str1);
 
         scanner.nextLine(); // 의미 없는 nextLine() 추가하기.
@@ -54,7 +54,7 @@ public class Step3 { // c s
         System.out.println("ch = " + ch);
 
         // *    기본타입 비교시 ==
-        //          vs 참조타입(문자열) 비교시 "문자열".equals("비교할문자열");
+        //          vs 참조타입(문자열) 비교시 "문자열".equals("비교할문자열");★
 
 
 
@@ -80,12 +80,12 @@ public class Step3 { // c s
 
             // 2. (2,3,6,7)
                 int modelName;
-                int class;
-                int 6hour;
+                int class;  x
+                int 6hour;  x
                 int $value;
                 int _age;
-                int #name;
-                int int;
+                int #name;  x
+                int int;    x
 
             // 3.
                 byte    short   int     long

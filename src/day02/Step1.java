@@ -15,9 +15,9 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
          */
 
         // p.53 자동타입 변환
-            // 1. 작은 타입 허용범위가 큰 타입 허용범위내 대입될때
-                // 변환 방향 : byte -> short , char -> int -> long -> float -> double
-                // 큰 타입 = 작은 타입
+            // 1. 작은 타입 허용범위가 큰 타입 허용범위내 대입될때!!!!
+                // 변환 방향 : byte -> short , char -> int -> long -> float -> double // short와 char는 겹치지 않는 부분이 존재하므로 서로 자동타입 변환 안됨
+                // 형태 : 큰 타입 = 작은 타입
         byte byteValue = 10;
         int intValue = byteValue;       // byte -> int 대입 (자동)
         System.out.println("intValue : " + intValue );
@@ -38,6 +38,8 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
         double doubleValue = floatValue;// float -> double 대입 (자동)
         System.out.println("doubleValue : " + doubleValue );
 
+        // float 자체는 long보다 크다, but 읽을수 있는 범위는 대략 7자리의 유효 숫자를 표현할 수 있습니다.
+
         // p.55 강제 타입 변환  = 캐스팅
             // 1. 큰 타입 허용범위가 작은 타입 허용범위내 대입될때
                 // 변환 방향 : byte <- short , char <- int <- long <- float <- double
@@ -57,11 +59,12 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
 
         double var7 = 3.14;
         int var8 = (int)var7;               // double -> int ( 강제 )
-        System.out.println("var8 : " + var8 );  // A : char 유니코드/문자
+        System.out.println("var8 : " + var8 );  // 3
         // *
         int result = (int)(30000 * 0.1) ;          // 오류 발생 이유 :
                     // 1. ( int * double)
                     // 2. 연산결과의 타입은 자동타입변환
+        System.out.println(result);
 
         // p.58 연산식에서 자동 타입변환 [ 피연산자 중 큰 타입를 결과타입 반환 ]
             // 1. byte , short => int
@@ -91,7 +94,7 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
         int v10 = 1;
         int v11 = 2;
         //int result7 = v10 / v11;           // 0     int / int => int [ 문제 없음 - 소수점이 표현 불가능 ]
-        double result7 = (double) v10 / v11; // 0.5   int / int => (캐스팅) 해서 소수점 표현 하자.
+        double result7 = (double) v10 / v11; // 0.5   double로 => (캐스팅) 해서 소수점 표현 하자.
 
 
     } // main e
@@ -119,8 +122,8 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
             double      8바이트    유효소수점 15자리 , 16자리 출력
 
             [문자]
-            char        2바이트    유니코드 65535
+            char        2바이트    유니코드 65535          ''
 
             [문자열]
-            +String     문자길이   영문1바이트 한글2바이트
+            +String     문자길이   영문1바이트 한글2바이트        ""
  */
