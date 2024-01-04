@@ -13,6 +13,9 @@ public class Level1_6 {
 		double value5 = 3.123123123;	
 		
 		/* 문제풀이 위치 */
+		byte value6 = (byte)value1;
+		short value7 = (short)value2;
+		System.out.println("byte <- short : "+value6);
 
 		/* ----------- */
 	}

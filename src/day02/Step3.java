@@ -26,7 +26,7 @@ public class Step3 { // c s
         String str = scanner.nextLine(); //enter 누르기 전까지 모든 문자열
         System.out.println("str = " + str); // soutv //  출력해야하니까 out
 
-        // [ Scanner 제공하는 메소드 ]
+        // [ Scanner 제공하는 메소드 ]                             //입력받은 놈들 반환하며 변수 지정하기
         // 1. 입력받은 문자열(String) 반환.  띄어쓰기 포함 불가
         String str1 = scanner.next(); //첫 띄워쓰기 이전까지의 문자열을 불러온다.
         System.out.println("str1 = " + str1);

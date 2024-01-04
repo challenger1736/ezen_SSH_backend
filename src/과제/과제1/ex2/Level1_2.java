@@ -1,4 +1,4 @@
-package 과제.과제2.Level1.ex2;
+package 과제.과제1.ex2;
 
 import java.time.LocalDateTime;
 
@@ -10,7 +10,14 @@ public class Level1_2 {
 		System.out.printf("%-10s   %15s   %30s\n" , "type" , "value" , "range" );
 		System.out.println("-------------------------------------------------------------");
 		/* 문제풀이 위치 */
-		
+		System.out.printf("%-10s   %15s   %30s\n" , "boolean" , true , true+" or "+false );
+		System.out.printf("%-10s   %15s   %30s\n" , "byte" , 100 , (byte)-128+" ~ "+(byte)127 );
+		System.out.printf("%-10s   %15s   %30s\n" , "char" , 'A' , (char)0+" ~ "+(char)65535+" [ character 1 ]" );
+		System.out.printf("%-10s   %15s   %30s\n" , "short" , (short)30000 , (short)-32768+" ~ "+(short)32767 );
+		System.out.printf("%-10s   %15s   %30s\n" , "int" , 2000000000 , "-+2000 million" );
+		System.out.printf("%-10s   %15s   %30s\n" , "byte" , 40000000000L ,  "-+2000 million Excess" );
+		System.out.printf("%-10s   %15s   %30s\n" , "byte" , 3.123f , "8 decimal places" );
+		System.out.printf("%-10s   %15s   %30s\n" , "byte" , 3.12312312 , "17 decimal places" );
 		/* ----------- */
 	}
 }
