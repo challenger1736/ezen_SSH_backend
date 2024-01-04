@@ -1,4 +1,4 @@
-package 과제.과제2.Level1.ex8;
+package 과제.과제1.ex8;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;
@@ -16,6 +16,18 @@ public class Level1_8 {
 		String output = "";
 		
 		/* 문제풀이 위치 */
+
+
+
+
+		for(int i =1 ; true ; i++){
+			System.out.print("["+i+"]"+"작성자 : ");
+			String a = scanner.nextLine();
+			System.out.print("["+i+"]"+"방문록 : ");
+			String b = scanner.nextLine();
+			output += " "+i+"\t "+a+"\t "+b+"\n";
+			System.out.println(header+output+footer);
+		}
 		
 		/* ----------- */
 	}

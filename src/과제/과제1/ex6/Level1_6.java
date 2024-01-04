@@ -1,4 +1,4 @@
-package 과제.과제2.Level1.ex6;
+package 과제.과제1.ex6;
 
 public class Level1_6 {
 	
@@ -15,7 +15,14 @@ public class Level1_6 {
 		/* 문제풀이 위치 */
 		byte value6 = (byte)value1;
 		short value7 = (short)value2;
+		int value8 = (int)value3;
+		long value9 = (long)value4;
+		float value10 = (float)value5;
 		System.out.println("byte <- short : "+value6);
+		System.out.println("short <- int : "+value7);
+		System.out.println("int <- long : "+value8);
+		System.out.println("long <- float : "+value9);
+		System.out.println("float <- double : "+value10);
 
 		/* ----------- */
 	}
