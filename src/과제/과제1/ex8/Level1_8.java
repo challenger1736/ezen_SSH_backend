@@ -17,21 +17,49 @@ public class Level1_8 {
 		
 		/* 문제풀이 위치 */
 
+		boardlist = String.valueOf(1);
+		int list = Integer.parseInt(boardlist);
+
+		System.out.print("["+list+"]"+"작성자 : ");	//1
+		String a = scanner.nextLine();
+		System.out.print("["+list+"]"+"방문록 : ");
+		String b = scanner.nextLine();
+		output += " "+list+"\t "+a+"\t "+b+"\n";
+		System.out.println(header+output+footer); list++;
 
 
+		System.out.print("["+list+"]"+"작성자 : ");	//2
+		String c = scanner.nextLine();
+		System.out.print("["+list+"]"+"방문록 : ");
+		String d = scanner.nextLine();
+		output += " "+list+"\t "+c+"\t "+d+"\n";
+		System.out.println(header+output+footer); list++;
 
-		for(int i =1 ; true ; i++){
-			System.out.print("["+i+"]"+"작성자 : ");
-			String a = scanner.nextLine();
-			System.out.print("["+i+"]"+"방문록 : ");
-			String b = scanner.nextLine();
-			output += " "+i+"\t "+a+"\t "+b+"\n";
-			System.out.println(header+output+footer);
+		System.out.print("["+list+"]"+"작성자 : ");	//3
+		String e = scanner.nextLine();
+		System.out.print("["+list+"]"+"방문록 : ");
+		String f = scanner.nextLine();
+		output += " "+list+"\t "+e+"\t "+f+"\n";
+		System.out.println(header+output+footer); list++;
+
+		System.out.print("["+list+"]"+"작성자 : ");	//4
+		String g = scanner.nextLine();
+		System.out.print("["+list+"]"+"방문록 : ");
+		String h = scanner.nextLine();
+		output += " "+list+"\t "+g+"\t "+h+"\n";
+		System.out.println(header+output+footer); list++;
+
+		System.out.print("["+list+"]"+"작성자 : ");	//5
+		String j = scanner.nextLine();
+		System.out.print("["+list+"]"+"방문록 : ");
+		String k = scanner.nextLine();
+		output += " "+list+"\t "+j+"\t "+k+"\n";
+		System.out.println(header+output+footer); list++;
+
 		}
 		
 		/* ----------- */
 	}
-}
 /* 
 	[문제] 그림과 같이 기본자료형을 이용하여 변수 8개를 출력하시오.
 	[조건] 
