@@ -21,7 +21,8 @@ public class Level1_8 {
 		int list = Integer.parseInt(boardlist);
 
 		System.out.print("["+list+"]"+"작성자 : ");	//1
-		String a = scanner.nextLine();
+		String a = scanner.next();
+		String aa = scanner.nextLine();
 		System.out.print("["+list+"]"+"방문록 : ");
 		String b = scanner.nextLine();
 		output += " "+list+"\t "+a+"\t "+b+"\n";
@@ -29,28 +30,32 @@ public class Level1_8 {
 
 
 		System.out.print("["+list+"]"+"작성자 : ");	//2
-		String c = scanner.nextLine();
+		String c = scanner.next();
+		String cc = scanner.nextLine();
 		System.out.print("["+list+"]"+"방문록 : ");
 		String d = scanner.nextLine();
 		output += " "+list+"\t "+c+"\t "+d+"\n";
 		System.out.println(header+output+footer); list++;
 
 		System.out.print("["+list+"]"+"작성자 : ");	//3
-		String e = scanner.nextLine();
+		String e = scanner.next();
+		String ee = scanner.nextLine();
 		System.out.print("["+list+"]"+"방문록 : ");
 		String f = scanner.nextLine();
 		output += " "+list+"\t "+e+"\t "+f+"\n";
 		System.out.println(header+output+footer); list++;
 
 		System.out.print("["+list+"]"+"작성자 : ");	//4
-		String g = scanner.nextLine();
+		String g = scanner.next();
+		String gg = scanner.nextLine();
 		System.out.print("["+list+"]"+"방문록 : ");
 		String h = scanner.nextLine();
 		output += " "+list+"\t "+g+"\t "+h+"\n";
 		System.out.println(header+output+footer); list++;
 
 		System.out.print("["+list+"]"+"작성자 : ");	//5
-		String j = scanner.nextLine();
+		String j = scanner.next();
+		String jj = scanner.nextLine();
 		System.out.print("["+list+"]"+"방문록 : ");
 		String k = scanner.nextLine();
 		output += " "+list+"\t "+j+"\t "+k+"\n";
