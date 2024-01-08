@@ -16,8 +16,9 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
 
         // p.53 자동타입 변환
             // 1. 작은 타입 허용범위가 큰 타입 허용범위내 대입될때!!!!
-                // 변환 방향 : byte -> short , char -> int -> long -> float -> double // short와 char는 겹치지 않는 부분이 존재하므로 서로 자동타입 변환 안됨
-                // 형태 : 큰 타입 = 작은 타입
+                // 변환 방향 : byte -> short , char -> int -> long -> float -> double
+                // short와 char는 겹치지 않는 부분이 존재하므로 서로 자동타입 변환 안됨
+                // 형태 : 큰 타입 = 작은 타입 (작은놈은 당연히 큰놈안에 들어간다.)
         byte byteValue = 10;
         int intValue = byteValue;       // byte -> int 대입 (자동)
         System.out.println("intValue : " + intValue );
@@ -33,12 +34,11 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
         longValue = 100;
         float floatValue = longValue;   // int -> float 대입 (자동)
         System.out.println("floatValue : " + floatValue );
+        // float 자체는 long보다 크다, but 읽을수 있는 범위는 대략 7자리의 유효 숫자를 표현할 수 있습니다.
 
-        floatValue = 100.5F;            // 100.5 [ 실수 리터럴 : double ] F
+        floatValue = 100.5F;            // 100.5 [ 실수 리터럴 : double 이기때문에 같은 수라도 F 붙여야함!!]
         double doubleValue = floatValue;// float -> double 대입 (자동)
         System.out.println("doubleValue : " + doubleValue );
-
-        // float 자체는 long보다 크다, but 읽을수 있는 범위는 대략 7자리의 유효 숫자를 표현할 수 있습니다.
 
         // p.55 강제 타입 변환  = 캐스팅
             // 1. 큰 타입 허용범위가 작은 타입 허용범위내 대입될때
@@ -77,7 +77,7 @@ public class Step1 { // 1.자바의 모든 코드는 클래스 안에서 작성.
         byte result1 = 10+20; // 컴파일 연산.
 
         byte v1 = 10;   byte v2 = 20;
-        int result2 = v1 + v2;  // byte + byte => int
+        int result2 = v1 + v2;  // byte + byte => int // possible lossy conversion from int to byte 에러뜸 byte result2하면!
 
         byte v3 = 10;   int v4 = 100;   long v5 = 1000L;
         long result3 = v3 + v4 + v5;    // byte + int => int + long => long

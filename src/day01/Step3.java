@@ -39,7 +39,7 @@ public class Step3 { // c s
         //java: incompatible types: java.lang.String cannot be converted to char
 
         // int는 21억 까지 있으므로 유니코드 다 실행가능!
-        int i3 ='A';     //65
+        int i3 ='A';     //65               // 이런식으로 스트링 하나 하나 검증 많이 함.
         System.out.println("i3:"+i3);
         int i4 ='가';    //44065
         System.out.println("i4:"+i4);

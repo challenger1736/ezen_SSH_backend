@@ -22,6 +22,7 @@ public class Step1 {    // 클래스 선언 // class start
 
         // 실행문 : 1.변수선언 2.변수 대입 3.메소드호출
             // 코드 ; 끝마침!! [ 생략시 오류 >>>> java: ';' expected ]
+        System.out.println("asdf");
     }
 } // class end
 

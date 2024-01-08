@@ -22,7 +22,7 @@ public class Step3 { // c s
         Scanner scanner = new Scanner( System.in); // 담아야 하니까 System.in
             // [3] 객체를 통한 메소드 호출.
         //scanner.nextLine();
-            // [4] 메소드 호출의 결과을[return] 또 다른 변수에 저장한다.
+            // [4] 메소드 호출의 결과를[return] 또 다른 변수에 저장한다.
         String str = scanner.nextLine(); //enter 누르기 전까지 모든 문자열
         System.out.println("str = " + str); // soutv //  출력해야하니까 out
 
@@ -49,8 +49,8 @@ public class Step3 { // c s
         // 9. 입력받은 더블(double) 반환
         double d = scanner.nextDouble();         System.out.println("d = " + d);
         // 10. 입력받은 문자(char) 반환 없음
-            //--> "문자열".charAt(추출인덱스) : 문자열에서 문자1개 추출 함수
-        char ch = scanner.next().charAt(0); // 첫글자 추출
+            //--> "문자열".charAt(추출인덱스) : 문자열에서 문자1개 추출 함수    // 생각보다 문자열은 많이 쓰이기 때문에 잘 알아둘 것!
+        char ch = scanner.next().charAt(0); // 띄워쓰기 전까지의 문자열에서 첫글자 추출!!!!!!!!!!!!
         System.out.println("ch = " + ch);
 
         // *    기본타입 비교시 ==

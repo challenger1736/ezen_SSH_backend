@@ -29,7 +29,7 @@ public class Step2 { //class s
         }
 
         System.out.println("sum = " + sum);
-        System.out.println("1~"+(i-1)+"합 : "+ sum);
+        System.out.println("1~"+(i-1)+"합 : "+ sum); // 밖에 이거 합적기 위해서 일부러 밖으로 변수 선언 한듯 i
         
         // 3. 구구단 : 중첩 for문
         for (int 단 = 2; 단<=9 ; 단++){
@@ -59,8 +59,8 @@ public class Step2 { //class s
         //6. 구구단 while문으로 바꿔보기
         int 단2 = 2;
         while (단2<=9) {
-            int 곱2 = 1;
-            while (곱2<=9){
+            int 곱2 = 1;                     // 안에 있는 i, 단, 곱등도 실제로 변화하는 것이므로 또 변수 선언은 1로 해줘야 함.
+            while (곱2<=9){                  // 아니면 9에서 멈춰있게 됨!
                 System.out.println(단2+" X "+곱2+" = "+ 단2*곱2);
                 곱2++;
             }

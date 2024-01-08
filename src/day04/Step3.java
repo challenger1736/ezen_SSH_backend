@@ -17,16 +17,18 @@ public class Step3 {
                 //
                 String strNum = scanner.nextLine(); //무한 입력 넥스트 라인은 입력 할때까지 대기상태로 있는거라서 한턴마다 멈춤
 
-                if (strNum.equals("1")) {
-                    run = true;
-                    speed++;
-                    System.out.println("현재 속도 =" + speed);
-                } else if (strNum.equals("2")) {
-                    speed--;
-                    System.out.println("현재 속도 =" + speed);
-                } else if (strNum.equals("3")) {
-                    run = false; // run으로 다시 이동 false라서 거기서 다시 32번줄로
-                }//2. 32번줄 이동
+                switch (strNum) {
+                    case "1" -> {
+                        run = true;
+                        speed++;
+                        System.out.println("현재 속도 =" + speed);
+                    }
+                    case "2" -> {
+                        speed--;
+                        System.out.println("현재 속도 =" + speed);
+                    }
+                    case "3" -> run = false; // run으로 다시 이동 false라서 거기서 다시 32번줄로
+                }
                 //break; // 가장 가까운 반복문 탈출 키워드 ; 현재 기준에서는  가장 가까운 반복문 무한루프 이니까.
                 // 3. 함수{} 나가기 -> 45번줄 이동
                 //return; // 현재 함수 종료.

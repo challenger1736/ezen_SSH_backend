@@ -20,6 +20,7 @@ public class Step2 { //c s
         String str = "10";   int value = 10;
         //boolean result = str == value ? true : false; // 오류발생
         boolean result = Integer.parseInt(str) == value ? true : false; // 해결방안
+        System.out.println(result);
         
             // - 기본타입을 문자열 변환
             // 1. String.valueOf(기본타입값);
@@ -43,9 +44,9 @@ public class Step2 { //c s
             // System클래스 : 시스템 관련된 클래스[다양한 메소드와 속성(필드) 제공]
                 // out : 출력  vs  in : 입력
                 // System.out vs System.in
-                    // 1. println("")                      : 콘솔 출력 후 줄바꿈
+                    // 1. println("")                      : 콘솔 출력 후 줄바꿈 sout
                     // 2. print("")                        : 콘솔 출력
-                    // 3. printf("형식1 형식2",값1,값2)      : 콘솔 형식에 맞추어 출력
+                    // 3. printf("형식1 형식2",값1,값2)      : 콘솔 형식에 맞추어 출력 souf
         // 1. print( 리터럴 또는 변수명 )
         System.out.print(" 출력문구1 ");    // 출력만 하고 줄바꿈 안함.
         System.out.print(" 출력문구2 ");
@@ -69,7 +70,7 @@ public class Step2 { //c s
         System.out.printf("상품의 가격 : %06d원 \n" , valueInt );
 
         double area = 3.14159 * 10 * 10;
-        System.out.printf("반지름이 %d인 원의 넓이 : %10.2f\n" , 10 ,area ); // 소수점 2자리 출력
+        System.out.printf("반지름이 %d인 원의 넓이 : %10.2f\n" , 10 ,area ); // 소수점 2자리 출력!!
 
         String name ="홍길동"; String job = "도적";
         System.out.printf("%6d | %-10s | %10s \n" , 1 , name , job );
