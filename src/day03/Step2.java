@@ -23,7 +23,7 @@ public class Step2 {    // 클래스
 
             System.out.println("============ 방문록 ============");
             System.out.println("번호 | 작성자 | 내용 | 날짜");
-            System.out.println(1 +"|"+ 작성자+" |"+" 내용"+" |"+ 날짜);
+            System.out.println(1 +" | "+작성자+" | "+ 내용 + " | "+ 날짜);
 
         //System.out.printf();
 

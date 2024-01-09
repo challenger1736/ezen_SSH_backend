@@ -8,7 +8,7 @@ public class Step1 { //class s
         //2. 출력함수                   //출력시 사용
             // 1. System.out.print();
             // 2. System.out.printIn() ; sout
-            // 3. System.out.printf()  ; soutf
+            // 3. System.out.printf()  ; souf
         //3. 입력객체/함수               //입력시 사용
             // Scanner scanner = new Scanner(System.in);
             // scanner.next()

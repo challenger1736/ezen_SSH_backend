@@ -8,5 +8,12 @@ public class Key {
         System.out.printf(""); // souf
         System.out.println("args = " + args); // soutv
         Scanner scanner = new Scanner(System.in); // Scanner  자동완성
+        //st 바꾸기
+        //st 바꾸기
+        //st 바꾸기
+        //st 바꾸기
+        //st 바꾸기
+        //st 바꾸기
+        //st 바꾸기 // ctrl + F 후 ctrl + R
     }
 }
