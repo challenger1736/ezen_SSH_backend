@@ -16,7 +16,7 @@ public class Level4_4 {
 
 		while ( true ) {
 			/* 문제풀이 위치 */
-<<<<<<< HEAD
+
 			//System.out.println(x); 분명 x가 증가는 하는데, 왜 와이 // 이런 거 개념때문에 오래걸림. // 한번 더 대입해야함.
 			System.out.println();
 			for (int i =0; i<X_AXIS.length; i++){
@@ -37,9 +37,7 @@ public class Level4_4 {
 				X_AXIS[ x ] = "★";
 				X_AXIS[ x+1 ] = null;
 			}
-=======
 
->>>>>>> origin/master
 			/* ----------- */
 		}
 	}
