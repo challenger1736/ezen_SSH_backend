@@ -16,11 +16,11 @@ public class Level3_4 {
 			System.out.print("input : ");
 			int input = scanner.nextInt();
 			scanner.nextLine();
-			int output2 = output + input;
+			int output2 = output + input; // 원래 수 + 내가 적은 수 = output2
 			String output3 = "";
 			if (output2 < 0) { break;
 			}//나가게
-			for (int i = 0; i < output2; i++) {
+			for (int i = 1; i <= output2; i++) {
 				output3 += "■ ";
 				output = output2;
 			}

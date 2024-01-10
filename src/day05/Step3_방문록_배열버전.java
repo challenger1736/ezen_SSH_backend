@@ -6,7 +6,7 @@ public class Step3_방문록_배열버전 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String[] 내용 = new String[3];
+        String[] 내용 = new String[3]; // 내용이라는 변수명(스택)에 스트링 3(내용.length)개가 들어가는 배열이 생김, 그 배열들은 null임.
         String[] 작성자 = new String[3];
         int[] 비밀번호 = new int[3];
 
@@ -14,7 +14,7 @@ public class Step3_방문록_배열버전 {
             System.out.println("============= 방문록 =============");
             // 6 현재 변수 현황 출력
             for(int i = 0; i < 작성자.length; i++){
-                //null 비교시에는 비교 연산자 사용, 타입은 클래스 이지만,,,
+                //null 비교시에는 비교 연산자(==) 사용, 타입은 클래스 이지만 ★★
                 if(내용[i]==null){ 작성자[i] = ""; 내용[i]="";
                 System.out.printf("%2d \t %-5s \t %-20s\n",i+1, 작성자[i], 내용[i]);
                 }else {System.out.printf("%2d \t %-5s \t %-20s\n",i+1, 작성자[i], 내용[i]);}
@@ -41,7 +41,7 @@ public class Step3_방문록_배열버전 {
                 int password = scanner.nextInt();
 
                 // 저장 : 위치에 따른 각 변수에 저장.
-                if (no >= 1 || no <=3){
+                if (no >= 1 && no <=3){
                       내용[no-1] = content; 작성자[no-1] = writer; 비밀번호[no-1] = password;}
                 else {
                     System.out.println("[경고]알 수없는 위치입니다.");

@@ -23,7 +23,7 @@ public class Step3 {
         char result = scanner.next().charAt(0); // 첫 글자 입력 받기, 한 글자 입력 받기
         // -- 문자열에서 특정 문자 검색
         String str = "안녕하세요";
-        for(int i = 0 ; i< str.length(); i++){
+        for(int i = 0 ; i< str.length() ; i++){
             System.out.println( str.charAt(i));
         }
         // 2. 문자열 길이 : .length(); 매개변수 : 없음 / 반환값 : int  문자열길이를 int로 반환해주는 함수
@@ -51,7 +51,7 @@ public class Step3 {
         // 4. 문자열 잘라내기 : 문자열.subString()
             // 매개변수 : (1)   (2) 시작인덱스. 끝인덱스 / 반환타입 : 잘라낸 문자열 추출(String)
         String ssn2 = "880815-1234567";
-        String firstNum = ssn2.substring(0,6);   // 0~5번 인덱스 추출
+        String firstNum = ssn2.substring(0,6);   // 0번 포함 6개의 인덱스 추출
         System.out.println("firstNum = " + firstNum);
 
         String secondNum = ssn2.substring(7); // 7인덱스부터 마지막 인덱스까지 추출
@@ -90,7 +90,7 @@ public class Step3 {
 
         String  board = "1,자바 학습,참조 타입 String을 학습합니다.,홍길동";
         String[] strArray = board.split(",");
-        System.out.println("board = " + board);
+        System.out.println("board = " + board); // 불변이므로 잘라도 그대로 나오는거!
         System.out.println("strArray = " + strArray);
         System.out.println("번호 : " + strArray[0]);
         System.out.println("제목 : " + strArray[1]);

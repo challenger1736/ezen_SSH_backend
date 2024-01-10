@@ -7,13 +7,13 @@ public class Step4 {
 
         Scanner scanner = new Scanner(System.in);
             // !!! Scanner 클래스 입력시 [ 라이브러리 -> 호출 ] 자동완성시 상단의 클래스 위에 import 에 등록됨, 직접입력시 자동완성 X
-            // System, String 등등 import를 안해도됨, 기본적으로 해놨기 때문에.
+            // System, String 등등 자주쓰는 클래스들은 import를 안해도됨, 기본적으로 해놨기 때문에. / 자바 만든 사람이!
         //if 조건문
         //1.
         System.out.print("정수 입력 : ");
         int point = scanner.nextInt();
             // 만약 내가 입력한 값이 저장된 point 변수가
-            // 80보다 잇아이면 true 출력문이 실행되고 아니면 false 면 실행안된다.
+            // 80보다 이상이면 true 출력문이 실행되고 아니면 false 면 실행안된다.
         if(point>=80){
             System.out.println("입력받은 값은 80이상 입니다.");}
 

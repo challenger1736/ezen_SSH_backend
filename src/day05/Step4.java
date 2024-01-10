@@ -8,7 +8,7 @@ public class Step4 {
         int[] array={1,5,3,8,2};
         int temp = 0;
             for(int i=0; i< array.length; i++){
-                for(int a=1; a<array.length; a++){
+                for(int a=i+1; a<array.length; a++){
                     if(array[i]>array[a] && temp<=array[i]){temp = array[i];}
                     else if (array[i]<array[a] && temp<=array[a]){temp = array[a];}
 
@@ -68,7 +68,9 @@ public class Step4 {
                 System.out.printf("avg = %.1f \n" , avg2);
 
             }
-            else if(ch.equals("5")){}
+            else if(ch.equals("5")){
+                System.out.println("프로그램 종료");
+                break;}
         }
 
 

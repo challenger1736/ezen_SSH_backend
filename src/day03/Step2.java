@@ -25,7 +25,7 @@ public class Step2 {    // 클래스
             System.out.println("번호 | 작성자 | 내용 | 날짜");
             System.out.println(1 +" | "+작성자+" | "+ 내용 + " | "+ 날짜);
 
-        //System.out.printf();
+        //System.out.printf(); // %s = string , %d = 정수 , %f = 실수
 
 
             // 예제2 : 기본급과 수당 정수로 입력받아 실수령액 계산해서 출력

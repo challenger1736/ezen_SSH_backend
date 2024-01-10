@@ -158,9 +158,9 @@ public class Step5 {
 //        int Q7_2 = scanner.nextInt();
 //        int Q7_3 = scanner.nextInt();
 //        int result = 0;
-//        if(Q7 ==14 || Q7_2 ==14 || Q7_3==14){result++;}
-//        if(Q7 ==21 || Q7_2 ==21 || Q7_3==21){result++;}
-//        if(Q7 ==9 || Q7_2 ==9 || Q7_3==9){result++;}
+//        if(Q7 ==공1 || Q7_2 ==공1 || Q7_3==공1){result++;}
+//        if(Q7 ==공2 || Q7_2 ==공2 || Q7_3==공2){result++;}
+//        if(Q7 ==공3 || Q7_2 ==공3 || Q7_3==공3){result++;}
 //
 //        System.out.println(result);
 

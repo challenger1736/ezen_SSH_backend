@@ -13,7 +13,7 @@ public class Step2 {
         // 2. 문자열 비교
             // 1. ==
         String name1 = "홍길동";
-        String name2 = "홍길동"; // "" 큰따옴표 자체에 문자열객체 생성에 의미를 포함 해놨음.
+        String name2 = "홍길동"; // "" 큰따옴표 자체에 문자열객체 생성에 의미를 포함(주소가 자동생성) 해놨음.
         System.out.println(name1);
         System.out.println(name1 == name2); // 같다.
             // 2. new 연산자 : 객체를 생성할때 사용되는 키워드

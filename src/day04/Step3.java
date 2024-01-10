@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Step3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // 입력 객체
-        boolean run = true; // 무한루프의 상태를 저장하고 있는 변수
+        boolean run = true; // 무한루프의 상태를 저장하고 있는 변수 // 무한루프 끄기가 가능해짐.
         int speed = 0;
 
             while (run) {

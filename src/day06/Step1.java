@@ -1,24 +1,25 @@
 package day06;
 
-public class Step1 {
+public class Step1 { // 그럼 Null 에 넣는법이 뭔데? 그걸 알고싶은데, 이걸 꼭 알아야함.★★★★★★★★★★★★★★★★★★★★★★★★
     public static void main(String[] args) {
 
         // p149 : null
-            // - 아직 참조(번지)를 저장하고 있지 않다는 뜻.
-        int[] intArray = null;
+            // - 아직 참조(번지)를 저장하고 있지 않다는 뜻. // == 비교연산자로 쉽게 비교 가능, 객체가 아님! 그냥 null 은 null 이라는 특별한 놈
+        int[] intArray = null; // 이건 번지를 말하는 것이므로 당연히 번지가 없다는 것은 가능함.
             // 스택영역 생성 : 'intArray' 변수 선언
         // intArray[0] = 11; // java.lang.NullPointerException
             // 배열변수(스택영역)은 있지만, 배열객체(힙영역)이 실제로 존재하지 않음.
-        intArray = new int[10];
-        intArray[0] = 11;
-        System.out.println(intArray[0]);
-        //이렇게 하면 됨.
-        System.out.println(intArray.length);
+        //intArray = new int[10]; //이렇게 하면 됨 // 이것밖에 없나?
+        //intArray[0] = 11; //  ★★★★★★ 안하면  Null error
+
+        //System.out.println(intArray[0]);  ★★★★★★ 안하면  Null error
+        //이렇게 하면 됨. ★★★★★★ 안하면
+        //System.out.println(intArray.length); //  ★★★★★★ 안하면  Null error
 
         String str = null;
             // 스택영역에 변수 생성 : 'str'
         //System.out.println("str.length() = " +str.length()); // .NullPointerException
-            // 문자열변수(스택영역)은 있지만, 문자열 객체(힙영역)이 실제로 존재하지 않음.
+            // ★★★★★★★★문자열변수(스택영역)은 있지만, 문자열 객체(힙영역)이 실제로 존재하지 않음.★★★★★★★★
         //------------------------------------p151-----------------------------------------
         String hobby = "여행";
             // String hobby : 스택영역에 생성된 변수

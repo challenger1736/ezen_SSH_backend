@@ -49,7 +49,9 @@ public class Step3 {
 
 //        System.out.print("문제6 원의 반지름: ");
 //        int Q6 = scanner.nextInt();
-//        System.out.println(Q6*Q6*314/100);
+//        System.out.println(Q6*Q6*314/100.0);
+        
+        // 다른 사람들은 System.out.printf("%.2f" ,Q6*Q6*3.14); 이런식으로 소숫점 2번째 자리수까지 나오게 했음
 //
 //        문제7 : 실수형으로 두번 입력받아 앞 실수의 값이 뒤의 값의 몇% 인지 소수점 첫째 자리까지 출력하시오.
 //        예) 54.5   84.3 실수 2개입력시 결과는   64.285714%
@@ -58,6 +60,8 @@ public class Step3 {
 //        float Q7 = scanner.nextFloat();
 //        System.out.print("문제 7 실수형 나눌 두번째 값");
 //        float Q7_2 = scanner.nextFloat();
+//
+//        System.out.println(Q7/Q7_2);
 //
 //        int Q7_3 = (int)(Q7/Q7_2*1000.0);
 //
@@ -125,6 +129,7 @@ public class Step3 {
                                                             //+5 후 --x 호출(8), 현재 x값 8
                                                             // 총 23
 //        printf(" x의 값 : %d , y의값 :  %d ", x, y)           x = 8 , y = 23
+        //★★★★★★★★★★★★★★★
 //
 //        문제14 : 나이를 입력받아 나이가 10세이상이면 학생 , 20세이상이면 성인 , 40세이상이면 중년 으로 출력하기
 
