@@ -14,6 +14,7 @@ public class Level4_2 {
 
 		while ( true ) {
 			/* 문제풀이 위치 */
+<<<<<<< HEAD
 			System.out.print("\n배열 길이 : ");
 			int input = scanner.nextInt();
 			scanner.nextLine();
@@ -22,6 +23,9 @@ public class Level4_2 {
 			for(int i =0; i<students.length ; i++){
 				System.out.printf("\t"+students[i]);
 			}
+=======
+
+>>>>>>> origin/master
 			/* ----------- */
 		}
 	}
