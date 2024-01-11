@@ -16,6 +16,9 @@ public class Step5 {
         System.out.println("m = " + m);
         int s = Integer.parseInt(time.substring(4,6));
         System.out.println("s = " + s);
+        // 강사님 풀이법 m += (s/60)
+        //             h += (m/60) 60으로 나눈값 몫을 더하기! 인트라서 어차피 몫만 더해짐.
+        // hh = hh > 24 ? hh-24 : hh; 24 넘어가면!
         int s2 = Integer.parseInt(second);
         int s3 = s+s2;
         while(s3/60>=1){m++; s3 -= 60;}

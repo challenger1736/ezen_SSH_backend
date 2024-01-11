@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Step4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(" 입력(숫자형식으로 입력받기) : ");
+        System.out.print(" 입력(숫자형식으로 입력받기) : ");
         String money = scanner.nextLine();
             // 입력받은 문자열 타입의 금액을 천단위 쉼표 변환
         int length = money.length();
@@ -19,7 +19,8 @@ public class Step4 {
             if(i>0 && (money.length()-i)%3 == 0){
                 result+=",";
             }
-           result += money.charAt(i);}
+           result += money.charAt(i);
+        }
 
         // 천단위 쉼표 : 천단위 마다 , 추가 , 패턴 3자리마다
 
