@@ -1,7 +1,8 @@
 package day07;
 
 // ================================= 클래스 용도 : 2.실행클래스 ==================================/
-public class Step2 { // cs
+public class
+Step2 { // cs
     public static void main(String[] args) { // ms
 
         //p.215
@@ -34,14 +35,15 @@ public class Step2 { // cs
             // 1. 객체 생성
         Car2 mycar2 = new Car2();
             // 2. 객체내 필드 호출
-        System.out.println(new Car2().maxSpeed); // 이렇게도 되네
+        System.out.println(new Car2().maxSpeed); // 이렇게도 되네 // . 이 어디 쓰이나를 보기
         System.out.println("제작회사 = " + mycar2.company);
         System.out.println("모델명 = " + mycar2.model);
         System.out.println("색깔 = " + mycar2.color);
         System.out.println("최고속도 = " + mycar2.maxSpeed);
-        System.out.println("현재속도 = " + mycar2.speed);
+        System.out.println("현재속도 = " + mycar2.speed);   // 350
             // 3. 객체내 필드의 값 수정
         mycar2.speed = 60;
+        //mycar2 = new Car2(); 이걸 한번 더 넣으면 다시 또 350
         System.out.println("현재속도 = " + mycar2.speed);
         // ================
         Car2 yourCar2 = new Car2();

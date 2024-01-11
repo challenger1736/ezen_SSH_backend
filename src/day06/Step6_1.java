@@ -14,7 +14,7 @@ public class Step6_1 {    // class S
             System.out.println("============= 전화번호부 =============");
             System.out.printf("%-5s\t%-8s\t%-13s\n","순번","이름","전화번호");
             for(int i = 0; i<전화번호부.split("/").length; i++){
-                if(!전화번호부.equals("")){
+                if(!전화번호부.equals("")){  // 전화번호부가 있을때만 출력
                     System.out.printf("%-5s\t%-8s\t%-13s\n",i+1,전화번호부.split("/")[i].split(",")[0],전화번호부.split("/")[i].split(",")[1]);
                 }
             }

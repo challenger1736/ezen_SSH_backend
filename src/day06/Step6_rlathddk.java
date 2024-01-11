@@ -34,8 +34,8 @@ public class Step6_rlathddk {
 
         // 3. 전화번호부 만들기
         String 전화번호부 = "";
-        String[] numsp = null;
-        int no = 0;
+        String[] numsp = null;      // String이 들어가는 numsp라는 배열 만들기
+        int no = 0;                 // 쓸모없군.
 
 
         while (true) {
@@ -44,7 +44,7 @@ public class Step6_rlathddk {
             System.out.println("순번\t\t 이름 \t\t 전화번호 \t\t");
             if(numsp!=null) {
                 for (int i = 0; i < numsp.length; i++) {
-                    System.out.println(i+1 + "\t\t" + numsp[i]);
+                    System.out.println(i+1 + "\t\t" + numsp[i]);        // 있으면 그 배열을 하나씩 출력하기
                 }// f e
             }
             System.out.println("선택 > 1.등록 2.삭제");
@@ -55,20 +55,23 @@ public class Step6_rlathddk {
                 System.out.print("이름 : "); String name = scanner.nextLine();
                 System.out.print("전화번호 : "); String num = scanner.nextLine();
                 // 전화번호부 대입
-                전화번호부 +=name+"\t\t"+num+"/";
+                전화번호부 +=name+"\t\t"+num+"/";        // 전화번호부에 저장한뒤
                 // 스플릿
-                numsp = 전화번호부.split("/");
+                numsp = 전화번호부.split("/");       // numsp 에  전화번호부 스플릿 한 배열 대입. 한명/ 한명/ 이런 느낌.
 
             } // if e
             else if (ch.equals("2")) { // 2.삭제
                 System.out.print("삭제하실 순번을 입력해주세요. : ");
-                int del = scanner.nextInt();
-
+                int del = scanner.nextInt();                // 삭제할 번호 받기, 인덱스보다 1 크다.
+                전화번호부 = "";
                 for(int i=0; i<numsp.length; i++){
                     if(del-1==i){
-                        numsp[i] = null;
-                    } // if e
+                        numsp[i] = null;                    // numsp[i] 한명/ 이 null이 되는 과정
+                    } else{
+                         전화번호부 += numsp[i]+"/";
+                    }// if e
                 } // f e
+                numsp = 전화번호부.split("/");       // 삭제가 끝나기전에 다시 numsp를 대입, 삭제된 놈만 null
             }// else e
         }// w e
     } //m e

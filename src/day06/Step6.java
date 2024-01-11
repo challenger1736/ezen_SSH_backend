@@ -19,7 +19,7 @@ public class Step6 {
             for (int i = 0; i < 전화번호부2.length; i+=2) {
                 if (전화번호부2.length == 1) {
                 } else {
-                    System.out.printf("%d       %s     %s\n", i/2 + 1, 전화번호부2[i], 전화번호부2[i+1]);
+                    System.out.printf("  %d       %s       %s\n", i/2 + 1, 전화번호부2[i], 전화번호부2[i+1]);
                 };
             }
             System.out.println();
