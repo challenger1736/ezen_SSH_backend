@@ -31,7 +31,7 @@ public class Step1 {
                         붕어빵트레이[i] = 붕어빵; break;
                     }
                 }
-
+// 나는 이걸 i를 밖에서 세서 넣었는데 for문 돌려서 break하는게 더 직관적이고 좋은것 같다.
             }// if 끝나면 붕어빵의 지역변수는 사라짐. -> 곧 객체도 사라짐.
             if(ch == 2){
                 System.out.println("판매할 붕어빵 위치 : ");
