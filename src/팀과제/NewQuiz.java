@@ -142,7 +142,7 @@ public class NewQuiz {
                             if (내정보.구독번호 == 0) { // 구독번호가 없으면
                                 boolean run3 = true;
                                 while (run3) {
-                                    System.out.println("구독 개월 수 입력 : ");
+                                    System.out.print("구독 개월 수 입력 : ");
                                     String 신규구독개월 = scanner.nextLine();
                                     for (int i = 0; i < 신규구독개월.length(); i++) {
                                         if (!(신규구독개월.charAt(i) >= 48 && 신규구독개월.charAt(i) <= 57)) {//입력받은 아스키코드가 숫자 아니면
