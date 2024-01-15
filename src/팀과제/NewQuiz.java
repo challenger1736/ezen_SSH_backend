@@ -26,7 +26,11 @@ public class NewQuiz {
                         if (전체유저배열[i].아이디.equals(loginId) && 전체유저배열[i].비밀번호.equals(loginPw)) {
                             내정보 = 전체유저배열[i]; //배열내 i번째 id와 pw가 같으면, 전체유저i번째를 로그인중이라는 로그인 유,무에 저장
                             System.out.println("로그인 성공");
+                            if(내정보.구독번호 != 0){
                             System.out.println("내 구독 번호 : " + 내정보.구독번호);
+                            }else{
+                                System.out.println("아직 구독 중이 아닙니다.");
+                            }
                             break;
                         }
                     }

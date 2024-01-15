@@ -44,7 +44,6 @@ public class Step3 {
             } else {
                 System.out.println("잘못된 입력입니다.");
             }
-
         }
 
     }// me

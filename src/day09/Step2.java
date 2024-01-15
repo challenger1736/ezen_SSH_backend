@@ -52,7 +52,9 @@ public class Step2 {
                 System.out.print("계좌번호 : "); String input번호 = scanner.nextLine();
                 System.out.print("예금액 : "); int input추가입금 = scanner.nextInt();
                 for(int i =0; i <BankApplication.length; i++){
+                    if(BankApplication[i] ==null){System.out.println("맞는 계좌번호가 없습니다."); break;} //삭제가 없기때문에 이빨 빠질일이 없어서 가능
                     if(BankApplication[i].계좌번호.equals(input번호)){
+
                         BankApplication[i].계좌의돈 += input추가입금; break;
                     }
                 }
