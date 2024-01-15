@@ -22,7 +22,7 @@ public class NewQuiz {
                 String loginPw = scanner.nextLine();
 
                 for (int i = 0; i < 전체유저배열.length; i++) {
-                    if (전체유저배열[i] != null) { // null이 아닐때만 검사하므로 null일때는 그냥 로그인 되어버리는 이유<< 23번째 줄 참고.
+                    if (전체유저배열[i] != null) { // null이 아닐때만 검사하므로 null일때는 그냥 로그인 되어버리는 이유<< 18번째 줄 참고.
                         if (전체유저배열[i].아이디.equals(loginId) && 전체유저배열[i].비밀번호.equals(loginPw)) {
                             내정보 = 전체유저배열[i]; //배열내 i번째 id와 pw가 같으면, 전체유저i번째를 로그인중이라는 로그인 유,무에 저장
                             System.out.println("로그인 성공");
