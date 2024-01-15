@@ -11,6 +11,5 @@ public class Account { // 데이터 모델 : 기능에 대한 함수는 따로 �
         this.계좌번호 = 계좌번호;
         this.계좌주 = 계좌주;
         this.계좌의돈 = 계좌의돈;
-
     }
 }
