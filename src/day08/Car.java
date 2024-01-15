@@ -5,7 +5,7 @@ public class Car {
     //클래스 멤버
     
     //1. 필드
-    
+    String model;
     //2. 생성자
         // - 리턴타입 없고 클래스명과 이름 동일하다.
         // - 생성자 하나도 없으면 컴파일/실행 시 자동으로 기본생성자를 제공한다. 단 생성자를 정의했을경우. 기본생성자를 제공하지 않는다.
@@ -14,7 +14,7 @@ public class Car {
         // 3. {} 안에 생성자 호출시 처리할 로직을 작성한다.
     Car(){}
     public Car(String model, String color, int maxSpeed ){
-
+        this.model = model;
     }
 
     

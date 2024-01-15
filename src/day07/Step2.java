@@ -51,6 +51,11 @@ Step2 { // cs
         System.out.println(yourCar2.company==mycar2.company);
         // 리터럴이 문자열이기 때문에 문자열은 그 자체로 주소값과 비슷한 기능을 가지므로 문자열끼리 같다고 해도 true로 나온다.
         // 생성자 안에서도 실험 해볼것.
+        System.out.println(new Car2("현대자동차"));
+        System.out.println(new Car2("현대자동차").company== new Car2("현대자동차").company);
+        // 이것도 참이네(true)
+        System.out.println(yourCar2.company == new Car2("현대자동차").company);
+        // 이것도 참이네(true) // 공유하기 싫으면 new String("현대자동차")
         System.out.println("현재속도 = " + yourCar2.speed);
 
 

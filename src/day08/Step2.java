@@ -13,6 +13,7 @@ public class Step2 {
             // 5. 생성자호출()
         // 2. 정의생성자를 이용한 객체 생성
         Car car2 = new Car("그랜저", "검정",250);
+        System.out.println("car2.model = " + car2.model);// 필드와 this가 선언되어야 그랜저라고 나옴.
 
     }
 }
