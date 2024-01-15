@@ -14,6 +14,7 @@ public class NewQuiz {
             System.out.println("1. 로그인 2. 회원가입 ");
             String ch = scanner.nextLine();
             if(ch.equals("1")){// 로그인 했을 때
+                System.out.println("------------------------------");
                 내정보 = null;
                 System.out.print("로그인 - 아이디 입력 : ");
                 String loginId = scanner.nextLine();
@@ -36,6 +37,7 @@ public class NewQuiz {
             } else if (ch.equals("2")) { // 회원가입 했을 때
                 유저정보2[] 전체유저배열2 = new 유저정보2[전체유저배열.length+1]; // 추가로 넣을 새로운 배열 생성됨.
                 유저정보2 신규가입정보 = new 유저정보2(); // 하나의 신규가입정보가 들어감.
+                System.out.println("------------------------------");
                 boolean run = true;
                 while (run) {
                     System.out.print("회원 가입할 아이디를 입력하세요 : ");
@@ -66,7 +68,7 @@ public class NewQuiz {
                 for (int i = 0; i < 전체유저배열.length; i++) {
                     int a = (int) (Math.random() * 100000000);
                     if(전체유저배열.length == 1){ //null 하나밖에 없는 배열일 때.
-                        신규가입정보.유저번호 = a; System.out.println(신규가입정보.유저번호);
+                        신규가입정보.유저번호 = a; System.out.println("유저번호 : "+ 신규가입정보.유저번호);
                         break;
                     }
                     if (전체유저배열[i] != null) { // i번째 유저가 존재 할 때
@@ -74,7 +76,7 @@ public class NewQuiz {
                             i = 0;
                         } else {
                             신규가입정보.유저번호 = a;
-                            System.out.println(신규가입정보.유저번호); // 확인용
+                            System.out.println("유저번호 : "+ 신규가입정보.유저번호); // 확인용
                             break; // 대입하고 탈출.
                         }
                     }
@@ -210,6 +212,7 @@ public class NewQuiz {
                             }
 
                         } else if (ch3.equals("2")) { // 기간연장
+                            System.out.println("------------------------------");
                             for (int i = 0; i < 전체구독배열.length; i++) {
                                 if(내정보.구독번호 == 0){ System.out.println("아직 구독중이 아닙니다."); break;}
                                 if (전체구독배열[i] != null) {
@@ -255,6 +258,7 @@ public class NewQuiz {
 
 
                         } else if (ch3.equals("3")) { // 구독번호 등록하기
+                            System.out.println("------------------------------");
                             if(내정보.구독번호 == 0) {
                                 boolean run5 = true;
                                 String a; // 받을 구독 번호
@@ -276,9 +280,11 @@ public class NewQuiz {
                                 for (int i = 0; i < 전체구독배열.length; i++) {
                                     int 인원카운트 = 0;
                                     if (전체구독배열.length == 1 ){
+                                        System.out.println("------------------------------");
                                         System.out.println("해당하는 구독번호가 없습니다.");
                                     }
                                     if (전체구독배열[i] != null) {
+                                        System.out.println("------------------------------");
                                         if (전체구독배열[i].구독번호 == Integer.parseInt(b)) {
                                             if(전체구독배열[i].구독인원.length==1){
                                                 System.out.println("베이직은 1명까지만 가능합니다.");
@@ -308,6 +314,7 @@ public class NewQuiz {
                         } else if (ch3.equals("4")) { // 로그아웃, 구독정보 창으로 가기
                             run6 = false;
                         } else { // 다른 버튼 눌렀을 때.
+                            System.out.println("------------------------------");
                             System.out.println("잘못된 입력입니다.");
                         }
                     }
