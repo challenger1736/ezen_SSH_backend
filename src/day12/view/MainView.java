@@ -2,7 +2,7 @@ package day12.view;
 
 import java.util.Scanner;
 
-public class MainView {
+    public class MainView {
     //VIEW : 화면구현 (입출력)
     /*
     * 싱글톤 : 프로그램 내 하나의 객체를 사용 패턴.
@@ -19,7 +19,7 @@ public class MainView {
     public void run(){
         while(true){
             System.out.println("--------메인페이지-------");
-            System.out.println("1.회원가입 2.로그인");
+            System.out.println("1.회원가입 2.로그인 3.아이디 찾기 4.비밀번호 찾기");
             System.out.print("선택>");
             int ch = scanner.nextInt();
 
@@ -27,7 +27,11 @@ public class MainView {
                 MemberView.getInstance().signup();
             }
             else if(ch==2){ // 로그인 페이지 이동
-
+                MemberView.getInstance().login();
+            }else if(ch==3){ // 아이디 찾기 페이지 이동
+                MemberView.getInstance().idResearch();
+            }else if(ch==4){ // 비밀번호 찾기 페이지 이동
+                MemberView.getInstance().pwResearch();
             }
         }
     }

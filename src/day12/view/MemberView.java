@@ -32,4 +32,66 @@ public class MemberView {
         }
 
     }
+    //로그인 메소드
+    public void login(){
+        System.out.println("[1] MemberView.login");
+        Scanner scanner = MainView.getInstance().scanner;
+        // 1. 입력받는다.
+        System.out.print("아이디 : "); String id = scanner.next();
+        System.out.print("비밀번호 : "); String pw = scanner.next();
+        // 2. 객체 vs 2개 문자열
+        MemberDto memberDto = new MemberDto();
+        memberDto.setId(id); memberDto.setPw(pw);
+
+        //3. 컨트롤에게 전달하고 결과 받기
+        boolean result = MemberController.getInstance().login(memberDto);
+        System.out.println("[5] result = " + result);
+        if(result){
+            System.out.println("안내] 로그인 성공");
+                // 로그인 성공시 사용할 서비스의 view로 이동하는거 구현(오늘은 X)
+        }else{
+            System.out.println("안내] 로그인 실패");
+        }
+    }
+
+    //아이디 찾기
+    public void idResearch(){
+        System.out.println("MemberView.idResearch");
+        Scanner scanner = MainView.getInstance().scanner;
+        // 1. 입력받는다.
+        System.out.print("가입하신 휴대폰 번호를 입력하세요 : "); String phone = scanner.next();
+        // 2. 객체 vs 2개 문자열
+        MemberDto memberDto = new MemberDto();
+        memberDto.setPhone(phone);
+
+        // 3. 컨트롤에게 전달하고 결과 받기
+        String result = MemberController.getInstance().idResearch(memberDto);
+        System.out.println("result = " + result);
+        if(!(result.equals(""))){
+            System.out.println("안내] 찾으시는 아이디 : " + result);
+        }else{
+            System.out.println("찾는 아이디가 없습니다.");
+        }
+    }
+
+
+    //비밀번호 찾기
+    public void pwResearch(){
+        System.out.println("MemberView.idResearch");
+        Scanner scanner = MainView.getInstance().scanner;
+        // 1. 입력받는다.
+        System.out.print("가입하신 아이디를 입력하세요 : "); String id = scanner.next();
+        // 2. 객체 vs 2개 문자열
+        MemberDto memberDto = new MemberDto();
+        memberDto.setId(id);
+
+        // 3. 컨트롤에게 전달하고 결과 받기
+        boolean result = MemberController.getInstance().pwResearch(memberDto);
+        System.out.println("result = " + result);
+        if(result){
+            System.out.println("안내] 비밀번호 찾기 성공");
+        }else{
+            System.out.println("안내] 비밀번호 찾기 실패");
+        }
+    }
 }

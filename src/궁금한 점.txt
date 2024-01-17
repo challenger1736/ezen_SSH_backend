@@ -25,4 +25,4 @@ View에서 받아서 Dto클래스의 하나의 값에 대입하고(생성자), �
 그 Dao로 실행된 값으로 컨트롤러
 
 순서
-VdtoCdtoDao
+VdtoCdtoDao값C값V / VCDaoCV

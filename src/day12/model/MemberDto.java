@@ -23,6 +23,8 @@ public class MemberDto { // 이동할 객체의 봉지(쇼핑백)
         this.name = name;
         this.phone = phone;
     }
+
+
     // 3. 메소드
         // 1. setter, getter (필드가 private 이면 필수) 그래야 넣을수 있고 빼올 수 있음.
     public int getNo() {
