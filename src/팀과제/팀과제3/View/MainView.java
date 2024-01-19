@@ -1,4 +1,6 @@
-package 은행업무시스템.View;
+package 팀과제.팀과제3.View;
+
+
 
 import java.util.Scanner;
 
@@ -16,13 +18,14 @@ public class MainView {
             System.out.println("1. 계좌생성 | 2. 예금 | 3. 출금 ");
             String ch = scanner.nextLine();
             if (ch.equals("1")) {
-                AccountdoView.getInstance().signuUpAccount();
+                AccountView.getInstance().계좌생성();
             } else if (ch.equals("2")) {
+                AccountView.getInstance().예금();
             } else if (ch.equals("3")) {
+                AccountView.getInstance().출금();
             } else {
                 System.out.println("잘못된 입력입니다.");
             }
         }
     }
-
 }
