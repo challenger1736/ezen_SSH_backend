@@ -27,7 +27,9 @@ import java.util.Scanner;
                 MemberView.getInstance().signup();
             }
             else if(ch==2){ // 로그인 페이지 이동
-                MemberView.getInstance().login();
+                MemberView.getInstance().login(); // 멤버뷰의 로그인이 리턴값이 보이드인데,
+                // 이걸 로그인 성공시 다른 뷰가 보이게 하려면
+                // 다른 리턴 값을 받아서 다른 뷰가 보이게 하면 될듯. if로
             }else if(ch==3){ // 아이디 찾기 페이지 이동
                 MemberView.getInstance().idResearch();
             }else if(ch==4){ // 비밀번호 찾기 페이지 이동

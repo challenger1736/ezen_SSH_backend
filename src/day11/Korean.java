@@ -19,8 +19,8 @@ public class Korean {
     static final double EARTH_RADIUS = 6400;
     static final double EARTH_SURFACE_AREA;
         // 정적블록 [static멤버들의 초기값 대입]
-    static {
-        EARTH_SURFACE_AREA = 4*Math.PI*EARTH_RADIUS*EARTH_RADIUS;
+    static { //static{} = 해당 클래스의 모든 인스턴스가 생성되기 전에 실행됩니다. / 정적 영역 한 공간을 만들어버리기, 객체 안에!
+        EARTH_SURFACE_AREA = 4*Math.PI*EARTH_RADIUS*EARTH_RADIUS; //Math라는 public final클래스는 이미 자바안에 있다.
         // new 뒤에오면 생성자;
             // .()메소드; //. 소괄호없으면 필드;
     }

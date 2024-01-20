@@ -25,7 +25,7 @@ public class Step3 {
                 }
             }
             run = true;
-            myCar.gas += myCar.setGas(Integer.parseInt(gas));
+            myCar.gas += myCar.setGas(Integer.parseInt(gas)); //private이라면 getGas에다가 gas를 넣은걸 setGas로 설정
             System.out.println("가스를 넣었습니다.");
 
             System.out.println("1. 출발, 2.추가로 가스 넣기");

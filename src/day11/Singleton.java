@@ -14,6 +14,9 @@ public class Singleton {
 
     // 3. 필드 간접접근을 이용한 싱글톤 반환/리턴
     public static Singleton getInstance(){
+        // 싱글톤 하나 만든 객체를 불러내올 메소드를 만드는 작업!.
+        // 밖에서 Singleton.getInstance()하면 스태틱에 있는 하나의 힙 하나의 객체를 불러올 수 있음.
+        // 거기서 .메소드명 해서 쓸 수도 있음
         return singleton;
     }
 

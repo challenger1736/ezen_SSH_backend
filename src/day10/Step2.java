@@ -22,7 +22,7 @@ public class Step2 {
         int result3 = myCom.sum(values);
         System.out.println("result3 = " + result3);
 
-        int result4 = myCom.sum(new int[]{1,2,3,4,5});
+        int result4 = myCom.sum(new int[]{1,2,3,4,5}); //그냥 {1,2,3,4,5}를 values로 넣는거랑 다름 없음
         System.out.println("result4 = " + result4);
 
         // vs

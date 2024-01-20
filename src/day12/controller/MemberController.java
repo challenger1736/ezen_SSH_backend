@@ -13,7 +13,7 @@ public class MemberController {
     public static MemberController getInstance(){ return memberController; } // 생성자로 부를수 있게만.
 
     public boolean signup(MemberDto memberDto){ //상호 작용
-        System.out.println("[2] MemberController.signup");
+        //System.out.println("[2] MemberController.signup");
         boolean result = MemberDao.getInstance().signup(memberDto);
         return result; // 아래 결과를 리설트로 또 받기.
     }
@@ -22,7 +22,7 @@ public class MemberController {
 
     //로그인 메소드
     public  boolean login(MemberDto memberDto){
-        System.out.println("[2] MemberController.login");
+        //System.out.println("[2] MemberController.login");
         boolean result = MemberDao.getInstance().login(memberDto);
         System.out.println("[4] result = " + result);
 
@@ -35,14 +35,14 @@ public class MemberController {
     }
 
     public String idResearch(MemberDto memberDto){
-        System.out.println("MemberController.idResearch");
+        //System.out.println("MemberController.idResearch");
         String result = MemberDao.getInstance().idResearch(memberDto);
 
         return result;
     }
 
     public boolean pwResearch(MemberDto memberDto){
-        System.out.println("MemberController.idResearch");
+        //System.out.println("MemberController.idResearch");
         boolean result = MemberDao.getInstance().pwResearch(memberDto);
 
         return result;

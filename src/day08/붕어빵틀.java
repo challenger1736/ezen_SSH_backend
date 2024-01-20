@@ -10,4 +10,11 @@ public class 붕어빵틀 {
     
     // 3. 메소드
 
+    @Override
+    public String toString() {
+        return "붕어빵틀{" +
+                "밀가루='" + 밀가루 + '\'' +
+                ", 속재료='" + 속재료 + '\'' +
+                '}';
+    }
 }

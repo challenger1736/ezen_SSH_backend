@@ -23,6 +23,8 @@ public class Step1 {
         //myCalc.plus("5","6"); 이건 안됨 타입이 불일치
         System.out.println(myCalc.plus(5,6));
         int result = myCalc.plus(5,6);
+        System.out.println("result = " + result);
+
 
         //4.
         int x = 10;

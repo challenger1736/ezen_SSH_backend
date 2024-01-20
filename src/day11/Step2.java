@@ -5,7 +5,7 @@ public class Step2 {
         Car myCar = new Car();
         // speed 필드가 private 이므로 외부에서 접근 불가능
         // myCar.speed = -50;
-        myCar.setSpeed(-50); // 유효성검사
+        myCar.setSpeed(-50); // 게터세터 활용
         System.out.println("myCar.getSpeed() = " + myCar.getSpeed());
         myCar.setSpeed(60);
         System.out.println("myCar.getSpeed() = " + myCar.getSpeed());

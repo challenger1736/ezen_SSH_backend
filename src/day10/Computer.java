@@ -17,7 +17,7 @@ public class Computer {
         // 1. 가변길이 매개변수
     int sum(int ...values ){
         System.out.println("values = " + values);
-        // Array.toString(배열명) : 배열의 모든 요소들 값을 문자열로 출력해주는 함수.
+        // Arrays.toString(배열명) : 배열의 모든 요소들 값을 문자열로 출력해주는 함수.
         System.out.println("Arrays.toString(values) = " + Arrays.toString(values));
         int sum = 0;
         for(int i =0; i<values.length; i++){

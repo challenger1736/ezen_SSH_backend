@@ -1,6 +1,5 @@
 package day13;
 
-import org.w3c.dom.ls.LSOutput;
 
 public class ComputerExample {
     public static void main(String[] args) {

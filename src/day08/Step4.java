@@ -14,8 +14,8 @@ public class Step4 {
 
             for(int i = 0; i< phoneBook.length ; i++){
                 if(phoneBook[i] != null){
-                    System.out.printf("%3d \t %5s \t %12s \n", (i+1), phoneBook[i].name, phoneBook[i].number );
-                }
+                    System.out.printf("%3d \t %5s \t %12s \n", (i+1), phoneBook[i].getName(), phoneBook[i].getNumber() );
+                }//private으로 필드를 바꾼후에 .name을 못쓰니까 게터 세터 써서 getName으로 이름을 불러온것. 폰넘버도 마찬가지
             }
 
             System.out.println("1.등록 2.삭제 선택 > ");

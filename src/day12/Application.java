@@ -7,9 +7,9 @@ public class Application {
     // 실행 클래스 : MAIN
     public static void main(String[] args) {
         // 다른 클래스의 메소드를 호출하는 방법 (힙이 있으면 된다.)
-        //1. 해당 메소드가 인스턴스일 경우
+        //1. 해당 메소드가 인스턴스일 경우 // 객체를 만들어야겠지?
 //        new MainView().run();
-//        //2. 해당 메소드가 인스턴스일 경우
+//        //2. 해당 메소드가 인스턴스일 경우 // 객체를 만들어야겠지?
 //        MainView mainView = new MainView();
 //        mainView.run();
 
@@ -30,7 +30,7 @@ public class Application {
             - 관심사 분리해서 업무의 분리와 향상된 관리
             M : MODEL   : JAVA, DB          : 데이터 객체
                 - DTO 객체 : DATA( DB SERVER에 있음 )  DATA Transfer Object 이동객체
-                - DAO 객체 : 데이터 접근 객체(DATA ACCESS OBJECT) DB접근 객체
+                - DAO 객체 : 데이터 접근 객체(DATA ACCESS OBJECT) DB접근 객체 // 이것도 슈퍼 DAO를 두고 DAO 하나 하나에서 개별적인 처리를 오버라이딩 메소드로 하는게 유지보수관점에서 더 간편하고 쉽다.
                 - VO 객체 : VALUE OBJECT 불변데이터 객체/수정금지 (setter 없다)
             V : VIEW    : HTML,CSS,JS       : 화면 구현
             C : CONTROL : JAVA              : 모델과 뷰를 이어주는 서비스

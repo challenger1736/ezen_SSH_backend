@@ -1,7 +1,5 @@
 package day13;
 
-import java.sql.SQLOutput;
-
 public class Calculator {
 
     public double areaCircle(double r){

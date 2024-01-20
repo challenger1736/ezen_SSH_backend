@@ -1,0 +1,24 @@
+★★★★ database를 만들 놈을 만들기. ★★★★
+
+drop database if exists 데이터베이스이름;
+
+create database 데이터베이스이름;
+
+★★★★ 보기 ★★★★
+show databases;
+
+★★★★ 사용 ★★★★
+use 데이터베이스이름;
+
+★★★★ 데이터베이스 안의 테이블 만들기(use한 테이블) ★★★★
+create table 테이블이름(이름 타입, 이름1 타입1, 이름2 타입2);
+
+★★★★ 테이블 확인 ★★★★
+select*from 테이블이름;
+
+★★★★ 테이블 삭제 ★★★★
+drop table 테이블이름;
+
+★★★★★★★★★★★★★★★★★★★★ 결국 drop 이냐 create 가 생각의 기준점 이고 use하는 데이터베이스가 어디냐도 중요함
+★★★★★★★★★★★★★★★★★★★★ create/drop database/table  (만들/지을 이름)
+★★★★★★★★★★★★★★★★★★★★ 다른 것은 use database의이름; 사용하는 것, select*from 테이블이름; 정도가 배운거에서는 다름

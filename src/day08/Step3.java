@@ -17,5 +17,7 @@ public class Step3 {
         // 이지만 toString쓰면 객체 정보 하나하나 보임.
         Korean k2 = new Korean("김자바" ,"930525-0654321" );
         System.out.println("k2 = " + k2);;
+        //여러 프로그래밍 언어에서는 객체가 문자열로 변환될 때 자동으로 toString 메서드가 호출되기 때문에 toString을 생략해도 객체의 값들이 보인다.
+        //객체의 주소대신 나오게하는 toString 메소드를 넣어놓으면 주소대신 값이 나온다.
     }
 }

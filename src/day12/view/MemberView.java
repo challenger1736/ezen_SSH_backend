@@ -35,7 +35,7 @@ public class MemberView {
     //로그인 메소드
     public void login(){
         System.out.println("[1] MemberView.login");
-        Scanner scanner = MainView.getInstance().scanner;
+        Scanner scanner = MainView.getInstance().scanner; // 메인뷰에서 필드선언한놈을 가져온다.
         // 1. 입력받는다.
         System.out.print("아이디 : "); String id = scanner.next();
         System.out.print("비밀번호 : "); String pw = scanner.next();

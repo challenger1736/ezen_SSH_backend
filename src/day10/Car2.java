@@ -13,7 +13,7 @@ public class Car2 {
     }
 
     static void simulate(){ // 정적 메소드
-        //System.out.println(this.speed); //static메소드에서 인스턴스필드 호출 불가능
+        //System.out.println(this.speed); //static메소드에서 인스턴스필드 호출 불가능 // 이래서 메인메소드를 static으로 쓰다보니 구동 페이지 자체를 비static으로 구성하는 식으로 함.
         System.out.println(speed2); //  static메소드에서 static 필드 호출 가능
         Car2 myCar = new Car2();
         myCar.speed = 200;

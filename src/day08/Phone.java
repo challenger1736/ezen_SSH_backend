@@ -3,8 +3,8 @@ package day08;
 public class Phone {
     
     // 1. 필드 // 필드와 지역변수는 다르다. 지역변수의 리터럴 int i = 1;은 힙에 저장된다.
-    String name;
-    String number;
+    private String name;
+    private String number;
 
     // 2. 생성자
         // 1. 생성자명 : 클래스명통일
@@ -15,6 +15,21 @@ public class Phone {
         this.number = number;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
 
     // 3. 메소드
 }

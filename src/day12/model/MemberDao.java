@@ -21,7 +21,7 @@ public class MemberDao {
             // 개수 : .size()                                               배열은 배열명.length
             // 요소 호출 : .get(인덱스)                                       배열은 배열명[인덱스]
             // 요소 삭제 : .remove(인덱스) 스크립트는 splice랑 같음 이빨 안빠짐. / 배열명[인덱스] = null
-        ArrayList<MemberDto> memberDtos = new ArrayList<>();
+        ArrayList<MemberDto> memberDtos = new ArrayList<>(); // 이것도 Dao에 존재,
     // 1. 회원가입 처리 메소드
     public boolean signup(MemberDto memberDto){
         System.out.println("MemberDao.signup"); // 함수실행 잘 됐는지 안됐는지 soutm
@@ -31,7 +31,7 @@ public class MemberDao {
         for(int i =0; i<memberDtos.size(); i++){
             if(memberDto.getId().equals(memberDtos.get(i).getId())){
                 System.out.println("중복된 아이디가 있습니다.");
-                return false;
+                return false;// 데이터베이스에서 중복검사 같은것들은 당연히 데이터와 관계있으므로 Dao에서 유효성검사
             }
         }
         memberDtos.add(memberDto);

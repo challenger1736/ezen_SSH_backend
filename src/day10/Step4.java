@@ -6,7 +6,7 @@ public class Step4 {
             // 인스턴스 필드 사용시 객체 필요 // Calculator cc = new Calculator();
         //System.out.println(Calculator.pi2); // 안됨, 메소드 영역에 클래스 호출 전까진 없음
         // 2 정적필드 호출 가능
-        System.out.println(Calculator.pi);
+        System.out.println(Calculator.pi); // 필드를 부를때는 클래스명.필드명 (스태틱이라 호출가능)
 
         double result1 = 10*10*Calculator.pi;
 
@@ -15,7 +15,9 @@ public class Step4 {
         // Calculator.plus2(10,5);
         // 2 정적 메소드 호출
         int result2 = Calculator.plus(10,5);
+        System.out.println("result2 = " + result2);
         int result3 = Calculator.minus(10,5);
+        System.out.println("result3 = " + result3);
 
     }
 }
