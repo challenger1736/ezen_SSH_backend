@@ -1,0 +1,13 @@
+drop database if exists team;
+create database team;
+show databases;
+use team;
+drop table if exists 신한;
+create table 신한(계좌번호 text, 계좌주 char(10), 입금액 int , 마일리지 text );
+drop table if exists 국민;
+create table 국민(계좌번호 text, 계좌주 char(10), 입금액 int , 쿠폰 bool);
+drop table if exists 농협;
+create table 농협(계좌번호 text, 계좌주 char(10), 입금액 int , 포인트 text);
+select * from 신한;
+select * from 국민;
+select * from 농협;
