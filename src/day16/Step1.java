@@ -9,9 +9,17 @@ public class Step1 {
             // 타입이 다른데 가능한 이유 : extends, implements
         // 3. 인터페이스의 메소드 호출하면 구현객체의 메소드가 호출된다.
         rc.turnOn();
+        rc.setVolume(5);
+        rc.turnOff();
 
         rc = new Audio(); // - 다형성 (교체)
         rc.turnOn();
+        rc.setVolume(5);
+        rc.turnOff();
+
+        // 인터페이스의 상수필드 호출
+        System.out.println(RemoteControl.MAX_VOLUME);
+        System.out.println(RemoteControl.MIN_VOLUME);
     }
 }
 /*
@@ -40,5 +48,12 @@ public class Step1 {
     인스턴스화
         - 인스턴스 만드는 작업 ( = new )
 
+
+책의 중요 point
+304~ (클래스) 타입변환
+312~ (클래스) 다형성
+---
+368~ (인터페이스) 타입변환
+373~ (인터페이스) 다형성 // 인터페이스 선언하는것 = 인스턴스가 없다. 메소드영역에만 존재한다고 선언하는 것!
 
 */

@@ -11,7 +11,14 @@ public interface RemoteControl { // TV 와 AUDIO를 조작하는 리모컨에관
     // 구현 클래스가 필요하다 : 추상메소드를 구현한 클래스 (자식)
         // - 구현 클래스가 꼭 꼭 필요한 이유
         // 1. 추상클래스와 인터페이스는 스스로 객체를 생성할 수 없다.
-    public void turnOn();
+    public abstract void turnOn();
+    void turnOff(); // public abstract 쓰나 안쓰나 같다
+    void setVolume(int Volume);
+
+    // 상수 필드가 자동 된다. interface의 필드, public static final
+            // = 인터페이스는 정적필드(상수필드 제외)와 인스턴스필드를 가질 수 없다
+    int MAX_VOLUME = 10;
+    public static final int MIN_VOLUME = 0; // public static final 생략가능하다.
 }
 
 /*

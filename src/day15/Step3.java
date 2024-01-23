@@ -2,7 +2,7 @@ package day15;
 
 public class Step3 {
     public static void main(String[] args) {
-        Dog dog = new Dog();
+        Dog dog = new Dog(); //
         dog.sound();
 
         Cat cat = new Cat();
