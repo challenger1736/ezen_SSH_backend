@@ -84,3 +84,19 @@ delete from table1 where 데이터필드1 = 5;
 	# vs
     # 1. 테이블의 데이터 모두 삭제(ddl 이라 복구가 안됨) / 추후 취소 불가능
 truncate table table1;
+
+use test5;
+drop table if exists members;
+create table members(
+	name varchar(30)
+);
+
+
+
+# 정의어는 여기서 하고(만들기) 실제 조작어는 자바에서 but test용 db
+
+insert into members values('유재석');
+insert into members values('강호동');
+select*from members;
+update members set name='신동엽(바꿀이름)' where name = '강호동';
+delete from members where name ='신동엽';
