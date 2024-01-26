@@ -31,10 +31,13 @@ public class MemberController {
       return result;
   }
 // 로그인 상태 필드 [ boolean 했다/안했다. , String 아이디/null, int 회원번호/0(foreign key, pk 연결 때문에 이게 좋다.), 아니면 아예 Dto 객체자체를 넣어주기/null ]
-    int loginMno = 0; // 오늘은 (Mno)인트로 진행
+   int loginMno = 0; // 오늘은 (Mno)인트로 진행
 
+    public int getLoginMno() {
+        return loginMno;
+    }
 
-  public boolean login(MemberDto memberDto){
+    public boolean login(MemberDto memberDto){
       boolean result = false; // 기본 세팅들
 
       // 1. dao에게 login 처리 요청하고 결과 받기.
