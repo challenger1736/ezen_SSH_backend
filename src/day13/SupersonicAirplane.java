@@ -25,6 +25,6 @@ public class SupersonicAirplane extends Airplane{
     public void fly() {
         if(flyMode==SUPERSONIC){
             System.out.println("초음속 비행합니다.");
-        }else{ super.fly();} // this.fly(); 함수 재호출 해서 반복하게 할수도 있음,,
+        }else{ super.fly();} // this.fly(); 함수 재호출 해서 반복하게 할수도 있음,, super의 fly ()(<-메소드)를 실행해라.
     }
 }

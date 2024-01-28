@@ -1,6 +1,6 @@
 package day13;
 
-public class SmartPhone extends Phone{ // 부모 생성자가 힙으로 자동 하나 생성됨.
+public class SmartPhone extends Phone{ // 자식 생성시 부모 생성자가 힙으로 자동 하나 생성됨.
     public boolean wifi;
 
 

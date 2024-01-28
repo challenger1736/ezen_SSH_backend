@@ -23,6 +23,7 @@ public class SmartPhoneExample {
         myPhone.hangUp(); // SmartPhone 객체 내에 있는 Phone의 메소드 호출
 
         myPhone.setWifi(true); // SmartPhone 객체 내에 SmartPhone 메소드 호출
+        System.out.println("와이파이 상태 : " + myPhone.wifi); //변경후 호출
         myPhone.internet(); // SmartPhone 객체 내에 SmartPhone 메소드 호출
     }
 }

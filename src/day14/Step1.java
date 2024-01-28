@@ -64,7 +64,7 @@ public class Step1 {
         - final
            - 필드   : 필드의 값 수정 불가능
               String final 필드명       - 필드 값 고정
-              String static final 필드명   - 프로그램 전체에서 1개만 갖는 필드 => 상수
+              String static final 필드명   - 프로그램 전체에서 1개만 갖는 필드 => 상수 (상수는 관례상 모두 대문자로 필드명표기)
            - 클래스 : 상속불가 클래스 만들기
               public final class 클래스명{} - 해당 클래스는 부모클래스가 될 수 없다.
            - 메소드 :
