@@ -64,3 +64,26 @@ toString메소드에 관해
         현재객체 : this
         상위객체 : super
         상속 : 자식 extends 부모 {} 자식클래스에서 부모를 고른다. 부모는 자식을 모른다.
+
+
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+        ResultSet(rs)는 Query로 빼내서 get을 주로 쓸테고,(그것을 다시 자바에 있는 Dto에 set할 것이다.)
+        예> ps = conn.preparedStatement;
+        rs = ps.executeQuery;
+        rs.next()<< 이건 레코드 부르기 // 불린으로 나옴, true or false
+        담을Dto명.set담을변수명(rs.getInt("필드명"))
+        담을Dto명.set담을변수명(rs.getString("필드명"))
+
+        preparedStatement(Ps)는 아직 넣기전이므로 sql의 ?에 setString, setint 등으로 주로 쓴다.
+        String sql = insert into 테이블명(필드명, 필드명, 필드명) values (?, ?, ?);
+        예> ps = conn.preparedStatement;
+
+        ps.setInt(1, 받아온Dto의 게터)//1번째 물음표에 넣기
+        ps.setInt(2, 받아온Dto의 게터)//2번째 물음표에 넣기
+        ps.setInt(3, 받아온Dto의 게터)//3번째 물음표에 넣기
+
+        그리고 그 ps를 이제 넣어버렸!
+        ps.executeUpdate() // 인트로 나옴, 1개넣을거면 1이 나오겠지?
+
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★

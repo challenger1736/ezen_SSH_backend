@@ -44,6 +44,7 @@ public class BoardDao extends Dao {
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()){
+                // 한 줄(레코드) 단위로 소환됨.
                 CategoryDto categoryDto = new CategoryDto();
                 categoryDto.setCno(rs.getInt("cno"));
                 categoryDto.setCname(rs.getString("cname"));

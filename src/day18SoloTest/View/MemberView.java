@@ -1,5 +1,6 @@
 package day18SoloTest.View;
 
+
 import day18SoloTest.Controller.Controller;
 import day18SoloTest.Model.DTO.MemberDto;
 
@@ -26,6 +27,24 @@ public class MemberView {
             System.out.println("뭔 오류가 날려나?");
         }
 
+
+    }
+
+    public void login(){
+        System.out.print("아이디 : ");      String id = scanner.next();
+        System.out.print("비밀번호 : ");    String pw = scanner.next();
+        // dto에 담기
+        MemberDto memberDto = new MemberDto();
+        memberDto.setMid(id); memberDto.setMpw(pw);
+        // 3 전달후 결과
+        boolean result = Controller.getInstance().login(memberDto);//컨트롤러 메소드 호출자리
+        // 4. 결과 출력
+        if (result){
+            System.out.println("<안내> 로그인 성공");
+           // BoardView.getInstance().run(); // 로그인하면 여기서 함수가 실행됨.
+        }else {
+            System.out.println("<안내> 로그인 실패");
+        }
 
     }
 

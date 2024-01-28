@@ -16,7 +16,7 @@ public class MainView {
                     new MemberView().signup();
                 }
                 else if(ch==2){
-//                    MemberView.getInstance().login();
+                    new MemberView().login();
                 }
                 else{
                     System.out.println("<안내> 알 수 없는 기능 번호입니다.");
