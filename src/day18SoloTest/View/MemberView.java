@@ -1,5 +1,6 @@
 package day18SoloTest.View;
 
+import day18SoloTest.Controller.Controller;
 import day18SoloTest.Model.DTO.MemberDto;
 
 import java.util.Scanner;
@@ -17,6 +18,14 @@ public class MemberView {
         memberDto.setMpw(pw);
         memberDto.setMname(name); // dto에 넣는거 까지는 뷰에서 하기도 하는듯.
         // 넣은 dto객체를 보내기.<컨트롤러로 전환>
+        if(Controller.getInstance().signup(memberDto)==0){
+            System.out.println("============ 회원 가입완료 ============");
+        }else if(Controller.getInstance().signup(memberDto)==1){
+            System.out.println("중복된 아이디가 있습니다.");
+        }else{
+            System.out.println("뭔 오류가 날려나?");
+        }
+
 
     }
 

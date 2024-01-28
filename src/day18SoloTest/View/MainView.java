@@ -13,7 +13,7 @@ public class MainView {
             try {   // 만약에 try{}안에서 예외가 발생하면 catch로 이동
                 System.out.print("선택 > ");int ch = scanner.nextInt();
                 if(ch==1){
-//                    MemberView.getInstance().signup();
+                    new MemberView().signup();
                 }
                 else if(ch==2){
 //                    MemberView.getInstance().login();
