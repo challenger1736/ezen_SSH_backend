@@ -46,10 +46,9 @@ toString메소드에 관해
 
 
     - (접근제한자 public/default) (final) class 클래스명{}
-    // ★static은 객체 지향적이지 않음.(static하면 클래스가 하나가 되기때문)
     - (접근제한자 public/default/protected/private)(정적 static/ 인스턴스) (final) 타입 필드명;
     - (접근제한자 public/default/protected/private) 생성자(){}
-    // ★static은 객체 지향적이지 않음.(static하면 클래스가 하나가 되기때문), final 하면 생성자를 변경할 수 없다는 뜻이므로 생성자에 할 필요가 없다.
+//final 하면 생성자를 변경할 수 없다는 뜻이므로 생성자에 할 필요가 없다.
     - (접근제한자 public/default/protected/private)(정적 static/ 인스턴스) (final) 반환타입 메소드명(){}
 
       - 지역변수 : 함수안에서 // 지역변수는 절대 static이 될 수 없네
@@ -87,3 +86,5 @@ toString메소드에 관해
         ps.executeUpdate() // 인트로 나옴, 1개넣을거면 1이 나오겠지?
 
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+인터페이스는 자기 스스로 객체를 만들수 없다. 구현 클래스를 따로 두고 그 객체를 부르거나 익명 구현체를 (자기 스스로 오버라이딩) 만든다.
