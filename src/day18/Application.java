@@ -13,7 +13,7 @@ public class Application {// 실행용 메인 메소드용 클래스
 //        new MainView().run();
 
         //3.싱글톤(인스턴스 하나의 메소드)
-        MainView.getInstance().run();
+            MainView.getInstance().run();
 
         //4. 정적 메소드
         //메소드가 스태틱이면
