@@ -69,7 +69,7 @@ toString메소드에 관해
 
         ResultSet(rs)는 Query로 빼내서 get을 주로 쓸테고,(그것을 다시 자바에 있는 Dto에 set할 것이다.) // 불러올 때만 쓰이는 곳
         예> ps = conn.preparedStatement;
-        rs = ps.executeQuery;
+        rs = ps.executeQuery; // DB에서 빼오기
         rs.next()<< 이건 레코드 부르기 // 불린으로 나옴, true or false
         담을Dto명.set담을변수명(rs.getInt("필드명"))
         담을Dto명.set담을변수명(rs.getString("필드명"))
@@ -85,7 +85,7 @@ toString메소드에 관해
         ps.setInt(3, 받아온Dto의 게터)//3번째 물음표에 넣기
 
         그리고 그 ps를 이제 넣어버렸!
-        ps.executeUpdate() // 인트로 나옴, 1개넣을거면 1이 나오겠지?
+        ps.executeUpdate() // int로 나옴, 레코드 1개가 영향받으면 1이 나오겠지?
 
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 

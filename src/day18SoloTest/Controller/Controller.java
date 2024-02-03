@@ -3,7 +3,7 @@ package day18SoloTest.Controller;
 import day18SoloTest.Model.DAO.MemberDao;
 import day18SoloTest.Model.DTO.MemberDto;
 
-public class Controller {// 컨트롤러는 하나인게 낫다
+public class  Controller {// 컨트롤러는 하나인게 낫다
 
     private Controller(){};
     private static Controller controller = new Controller();
