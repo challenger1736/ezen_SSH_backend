@@ -37,14 +37,14 @@ public class MemberController {
         return loginMno;
     }
 
-    public boolean login(MemberDto memberDto){
+    public boolean login(MemberDto memberDto){ //뷰에서 id 랑 pw 받았지
       boolean result = false; // 기본 세팅들
 
       // 1. dao에게 login 처리 요청하고 결과 받기.
       result = MemberDao.getInstance().login(memberDto);
       if(result){
           // 3. lofin 성공한 회원번호 dao 요청.
-           loginMno = MemberDao.getInstance().findMno(memberDto.getMid());
+           loginMno = MemberDao.getInstance().findMno(memberDto.getMid()); // id mno3  , 3 / loginMno = 3
       }
 
       return result; // 기본 세팅들
